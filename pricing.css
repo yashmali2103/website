@@ -1,0 +1,119 @@
+/***********************************************
+ * Pricing Page Specific Styles
+ ***********************************************/
+
+/* Overall section background or spacing (optional) */
+.pricing-section {
+    background-color: #f9f9f9; 
+  }
+  
+  /* Heading for the pricing page */
+  .pricing-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* Shared plan box styling */
+  .plan-box {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 2rem;
+    
+  }
+  
+  /* Titles inside plan boxes */
+  .plan-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    
+  }
+  
+  .plan-title-1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    margin-top: 2.7rem;
+    
+  }
+  /* Price styling inside plan boxes */
+  .plan-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #666;
+    text-align: left;
+  }
+  
+  /* The bullet list for plan features */
+  .plan-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .custom-check-list {
+    list-style: none;   /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-check-list li {
+    display: flex;        /* Puts check + text on same line */
+    align-items: flex-start; /* So text lines up with the check mark */
+    margin-bottom: 0.5rem;   /* Spacing between items */
+    position: relative;      
+    text-align: left;
+  }
+  
+  /* Use a pseudo-element for the check mark */
+  .custom-check-list li::before {
+    content: "✔";       /* or your custom check symbol */
+    color: #065628;     /* Green or any color */
+    margin-right: 0.5rem; /* Space between check and text */
+    flex-shrink: 0;     /* Prevent the check from shrinking */
+  }
+  
+
+  /* Growth plan highlight border */
+  .growth-plan {
+    border: 3px solid #065628; /* Green border */
+    position: relative;
+  }
+  
+  /* "1 month free" label in Growth plan */
+  .free-label {
+    display: inline-block;       /* Pill-like box in normal flow */
+    background-color: #588157;   /* Dark green or brand color */
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 55%;
+          /* Spacing below the label */
+    /* If you want it centered above the heading: */
+    /* margin: 0 auto 0.5rem; display: block; text-align: center; */
+  }
+  /* Buttons inside plan boxes */
+  .plan-box .btn {
+    margin-top: auto; /* so it sits at bottom if content is tall */
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  
+  /* Adjust spacing or font sizes for smaller devices if needed */
+  @media (max-width: 767px) {
+    .plan-box {
+      margin-bottom: 4rem;
+    }
+  }

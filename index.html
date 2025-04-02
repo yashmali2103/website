@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ledger - Digitalize. Optimize. Streamline.</title>
+  
+  <!-- Bootstrap CSS (CDN) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  >
+  
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top custom-navbar">
+    <div class="container">
+      <!-- Logo / Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <!-- Ledger Logo (40px x 40px) -->
+        <img 
+          src="assets/Ledger-Logo.png" 
+          alt="Ledger Logo" 
+          width="40" 
+          height="40" 
+          class="rounded-circle me-2"
+        >
+        <!-- Brand Text -->
+        <span class="fw-bold" style="color: #006400;">Ledger</span>
+      </a>
+  
+      <!-- Toggle button for mobile view -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <!-- Home Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+  
+          <!-- WHAT WE DO (DROPDOWN) -->
+          <li class="nav-item dropdown">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" 
+              id="whatWeDoDropdownMenuLink" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false"
+            >
+              What We Do
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="whatWeDoDropdownMenuLink">
+              <li><a class="dropdown-item" href="pos.html">POS</a></li>
+              <li><a class="dropdown-item" href="#">AI Dashboard</a></li>
+            </ul>
+          </li>
+  
+          <!-- Pricing Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+  
+          <!-- About Us Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+  
+          <!-- REGISTER YOUR INTEREST BUTTON -->
+          <li class="nav-item">
+            <a 
+              class="btn btn-outline-success ms-lg-3" 
+              href="register.html"
+              style="border-radius: 20px;"
+            >
+              Register Your Interest
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-cards-section py-4">
+    <div class="container text-center">
+            <!-- Title + Subtitle + Button --><!-- Ledger Title & Subtitle -->
+      <h1 class="ledger-title">Ledger</h1>
+      <p class="ledger-subtitle mb-2">Digitalize. Optimize. Streamline.</p>
+
+      <!-- Bigger Button -->
+      <a class="btn btn-try-ledger btn-lg mt-2" href="register.html">
+        Try Ledger in 1 Minute
+      </a>
+      
+
+  
+      <!-- Feature Boxes Row -->
+      <div class="row justify-content-center">
+        <!-- Left Box (same size) -->
+        <div class="col-md-3 mb-3 d-flex">
+          <div class="card-box same-size">
+            <h5><font color="#fff">Your Earnings </font></h5>
+            
+            <h2>$8888.00</h2>
+          
+            <img 
+              src="assets/3.1.png" 
+              alt="Earnings Chart" 
+              class="chart-display"
+            >
+          </div>
+        </div>
+  
+        <!-- Middle Box (bigger & lower) -->
+        <div class="col-md-3 mb-3 d-flex justify-content-center" style="margin-top: 30px; margin-left: 30px; margin-right: 30px;">
+          <div class="card-box bigger-size text-center">
+            <h5>Connect All Your Channels</h5>
+            <img 
+              src="assets/2.1.png" 
+              alt="Channels" 
+              class="all-channels" 
+              
+            >
+            
+          </div>
+        </div>
+  
+        <!-- Right Box (same size) -->
+        <div class="col-md-3 mb-3 d-flex justify-content-center">
+          <div class="card-box same-size text-center">
+            <h5>Tailored Insights</h5>
+            <div class="ai-image" style="margin-top: 5.5rem; ">
+            <img 
+              src="assets/1.1.png" 
+              alt="Insights" 
+              class="ai-show" 
+              
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- =======================
+       THE EVERYTHING APP SECTION
+  ======================= -->
+  <section class="py-5" id="insights" style="min-height: 100vh;">
+    <div class="container">
+      <!-- Full-width row for the title -->
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h2 class="app-title">The everything app, for Retailers</h2>
+        </div>
+      </div>
+  
+      <!-- Row with text on the left, image on the right -->
+      <div class="row align-items-center g-5" style="margin-top: 2rem;">
+        <!-- LEFT COLUMN: Bold, bigger text with no box -->
+        <div class="col-md-6 scroll-lines">
+          <p class="app-text1 animate-line">Manage Your Orders</p>
+          <p class="app-text animate-line">Update Your Inventory</p>
+          <p class="app-text1 animate-line">Get Useful Insights</p>
+          <p class="app-text animate-line">And So Much More...</p>
+        </div>
+  
+        <!-- RIGHT COLUMN: Image -->
+        <div class="col-md-6 text-center">
+          <img 
+            src="assets/4.1.png" 
+            alt="Ledger POS" 
+            class="pos-image"
+            
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="apps-compare-section py-4">
+    <div class="container apps-compare-container">
+      <!-- Title Row -->
+      <div class="row mb-3">
+        <div class="col-12 text-center">
+          <h2 class="fw-bold display-5 apps-compare-title">
+            Everything You Need. <br> In One Place.
+          </h2>
+        </div>
+      </div>
+  
+      <!-- Comparison Row -->
+      <div class="row align-items-center apps-compare-row">
+        <!-- LEFT COLUMN -->
+        <div class="col-md-6 left-col fade-elements text-center p-4 apps-compare-left">
+          <h4 class="text-white apps-compare-subtitle">Apps Today are Disconnected</h4>
+  
+          <!-- Logos (Replace with your own) -->
+          <div class="d-flex justify-content-center flex-wrap my-3 gap-3">
+            <img src="assets/6.1.png" alt="img" class="logo-img">
+            
+          </div>
+  
+          <p class="fw-bold text-white apps-compare-annual">Average <font color="black">$4000 </font>  Annually</p>
+        </div>
+  
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-6 right-col fade-elements text-center p-4 apps-compare-right">
+          <h4 class="apps-compare-subtitle">With Ledger,<br> It’s all Connected</h4>
+  
+          <!-- Logos (Replace with your own) -->
+          <div class="d-flex justify-content-center flex-wrap my-3 gap-3">
+            <img src="assets/5.1.png" alt="Ledger" class="logo-img-big">
+          </div>
+  
+          <div>
+            <a href="register.html" class="btn btn-success fw-bold">From <font color="black">$55 </font> per month</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- SMART TOOLS SECTION -->
+  <!-- =========================
+      SECTION #1 (Existing)
+  ========================= -->
+  <section class="smart-tools-section py-5">
+    <div class="container">
+      <!-- Title Row -->
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h2 class="smart-tools-title">
+            Smart Tools for a Smart POS
+          </h2>
+        </div>
+      </div>
+
+      <!-- Two-Column Layout -->
+      <div class="row g-5 align-items-start">
+        
+        <!-- LEFT COLUMN -->
+        <div class="col-md-6">
+          <div class="smart-tools-box-left box-left fade-element p-4 position-relative left-box">
+            <h3>Manage All Sales Channels from Your POS</h3>
+            <p>
+              Directly process and fulfill orders from all your channels like 
+              <font color="#fff">Grab, Shopee, FoodPanda, Lazada</font> and more — all in one place.
+            </p>
+            <img 
+              src="assets/7.1.png" 
+              alt="POS Table" 
+              class="img-fluid my-3 outside-left-img"
+            >
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-6">
+          <div class="smart-tools-box-right box-right fade-element p-4 position-relative right-box">
+            <h3>List Your Inventory in Minutes</h3>
+            <p>
+              Use our in-app “Scan to Add” or import your existing stock list 
+              into your new POS and start selling within <font color="#fff"> 30 minutes.</font>
+            </p>
+            <img 
+              src="assets/8.1.png" 
+              alt="Phone with inventory scanning" 
+              class="img-fluid my-3 outside-right-img"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+      SECTION #2 (New)
+  ========================= -->
+  <section class="smart-tools-section-two py-5">
+    <div class="container">
+      
+
+      <!-- Two-Column Layout -->
+      <div class="row g-5 align-items-start">
+        
+        <!-- LEFT COLUMN -->
+        <div class="col-md-6">
+          <div class="smart-tools-box-left-two box-left fade-element p-4 position-relative left-box">
+            <h3>Go Ahead with
+              Artificial Inteligence </h3>
+            <p>
+              Get <font color="#fff">Personalised Recommendations</font> and chat with your personal AI Assistant for data driven advice based on in-depth analysis. 
+            </p>
+            <img 
+              src="assets/9.1.png" 
+              alt="POS Table #2" 
+              class="img-fluid my-3 outside-left-img-two"
+            >
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-6">
+          <div class="smart-tools-box-right-two box-right fade-element p-4 position-relative right-box">
+            <h3> The Best Automated Inventory Management</h3>
+            <p>
+              Advanced inventory optimization models along with AI help manage your inventory to <font color="#fff">Increase Profits.</font>
+            </p>
+            <img 
+              src="assets/10.1.png" 
+              alt="Phone #2" 
+              class="img-fluid my-3 outside-right-img-two"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+      SECTION #3 (New)
+  ========================= -->
+  <section class="smart-tools-section-three py-5">
+    <div class="container">
+     
+
+      <!-- Two-Column Layout -->
+      <div class="row g-5 align-items-start">
+        
+        <!-- LEFT COLUMN -->
+        <div class="col-md-6">
+          <div class="smart-tools-box-left-three box-left fade-element p-4 position-relative left-box">
+            <h3>Say Goodbye 
+              to Long Spreadsheets</h3>
+            <p>
+              With all your data in one place, We will visualize and provide you with what you need
+            </p>
+            <img 
+              src="assets/11.1.png" 
+              alt="POS Table #3" 
+              class="img-fluid my-3 outside-left-img-three"
+            >
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-6">
+          <div class="smart-tools-box-right-three box-right fade-element p-4 position-relative right-box">
+            <h3>Accept all payments
+              at low MDR</h3>
+            <p>
+              Enjoy competitive MDR when you integrate payments with our POS.            </p>
+            <img 
+              src="assets/12.1.png" 
+              alt="Phone #3" 
+              class="img-fluid my-3 outside-right-img-three"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section py-5">
+    <div class="container">
+      <!-- Title -->
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h2 class="faq-title">Questions? Answers!</h2>
+        </div>
+      </div>
+
+      <!-- FAQ Layout: 2 Columns -->
+      <div class="row">
+        <!-- LEFT COLUMN -->
+        <div class="col-md-6">
+          <!-- FAQ ITEM 1 -->
+          <div class="faq-item mb-4">
+            <div class="faq-question" data-faq="faq1">
+              <span>What does it cost?</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer" id="faq1">
+              <p>We offer flexible pricing. Check out our Pricing section!</p>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 2 -->
+          <div class="faq-item mb-4">
+            <div class="faq-question" data-faq="faq2">
+              <span>How do I collect payments?</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer" id="faq2">
+              <p>
+                You can integrate multiple payment methods, including credit cards,
+                PayPal, or COD.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 3 -->
+          <div class="faq-item mb-4">
+            <div class="faq-question" data-faq="faq3">
+              <span>What countries do you support?</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer" id="faq3">
+              <p>
+                We currently support multiple regions worldwide. Contact us to 
+                see if we support your area.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 4 -->
+          <div class="faq-item mb-4">
+            <div class="faq-question" data-faq="faq4">
+              <span>Is my data secure with Ledger?</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer" id="faq4">
+              <p>
+                Yes, we use encryption and secure servers to protect your data.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-6">
+          <!-- FAQ ITEM 5 -->
+          <div class="faq-item mb-4">
+            <div class="faq-question" data-faq="faq5">
+              <span>Can I get a free trial?</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer" id="faq5">
+              <p>
+                Absolutely! Sign up now to enjoy a free trial for a limited time.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 6 -->
+          <div class="faq-item mb-4">
+            <div class="faq-question" data-faq="faq6">
+              <span>Can Ledger help with online and offline sales?</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer" id="faq6">
+              <p>
+                Yes, Ledger supports omnichannel selling, so you can manage both
+                online and in-store sales seamlessly.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 7 -->
+          <div class="faq-item mb-4">
+            <div class="faq-question" data-faq="faq7">
+              <span>What fees are there?</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer" id="faq7">
+              <p>
+                We charge a monthly subscription. Any additional fees depend on
+                your chosen integrations.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 8 -->
+          <div class="faq-item mb-4">
+            <div class="faq-question" data-faq="faq8">
+              <span>How can I get in touch with the team?</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer" id="faq8">
+              <p>
+                You can reach us via our Contact page or email us at 
+                support@ledger.com.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+  <div class="container py-5">
+    
+    <div class="row">
+      <!-- LEFT COLUMN: Brand & Decorative Shapes -->
+      <div class="col-md-3 d-flex flex-column align-items-start brand-col mb-4 mb-md-0">
+        
+        <div class="footer-brand d-flex align-items-center mb-3">
+          <!-- Ledger Logo (replace with your actual image) -->
+          <img src="assets/pc.1.png" alt="Hex1" class="me-1" style="width: 200px; margin-left: -150px;">
+          <img 
+            src="assets/Ledger-Logo.png" 
+            alt="Ledger Logo" 
+            width="90" 
+            height="90"
+            class="me-2"
+            style="margin-left: 30px;"
+          >
+          <br>
+          <h4 class="mb-0">Ledger</h4>
+        </div>
+        
+        <!-- Decorative Hex Shapes (optional, replace with your own images) -->
+        
+      </div>
+
+      <!-- MIDDLE COLUMN 1: Important Links -->
+      <div  class="col me-4" style="margin-left: 70px; margin-top: 40px; margin-right: 50px;">
+        <h5 class="footer-heading">Important Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">POS Software</a></li>
+          <li><a href="#">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- MIDDLE COLUMN 2: About Us -->
+      <div  class="col me-4" style=" margin-top: 40px;">
+        <h5 class="footer-heading">About Us</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN: Contact Us -->
+      <div  class="col me-4" style=" margin-top: 40px;">
+        <h5 class="footer-heading">Contact Us</h5>
+        <div class="footer-contact d-flex align-items-center">
+          
+          <span class="text-white">ledger.ai.inc@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS (CDN) + Popper (necessary for some Bootstrap components) -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- Your Custom JS -->
+  <script src="script.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const lines = document.querySelectorAll('.animate-line');
+      
+      const options = {
+        root: null,          // use the browser viewport
+        rootMargin: '0px',
+        threshold: 0.1       // trigger when 10% of line is visible
+      };
+  
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // We can stagger them by using an index-based delay
+            // "line" is entry.target, which is our paragraph
+            const line = entry.target;
+  
+            // if not already animated, we animate
+            if (!line.classList.contains('animate-active')) {
+              // optional: get index for a staggered delay
+              const index = [...lines].indexOf(line);
+              const delay = index * 200; // each line delayed by 200ms more than previous
+  
+              setTimeout(() => {
+                line.classList.add('animate-active');
+              }, delay);
+            }
+          }
+        });
+      }, options);
+  
+      // Observe each line
+      lines.forEach(line => observer.observe(line));
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-elements');
+      
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            obs.unobserve(entry.target); // animate only once
+          }
+        });
+      }, {
+        threshold: 0.1 // triggers when 10% of element is visible
+      });
+  
+      fadeElements.forEach(el => observer.observe(el));
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Select all elements that will fade/slide in
+      const fadeElements = document.querySelectorAll('.fade-element');
+  
+      // Create observer
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Add .in-view class to start the animation
+            entry.target.classList.add('in-view');
+            // Unobserve so it only animates once
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1  // trigger when 10% of the element is visible
+      });
+  
+      // Observe each fade element
+      fadeElements.forEach(el => observer.observe(el));
+    });
+  </script>
+  
+  
+
+</body>
+</html>

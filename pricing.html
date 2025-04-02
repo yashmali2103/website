@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing - Ledger</title>
+  
+  <!-- Bootstrap CSS (CDN) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  >
+  
+  <!-- Main Styles (if needed for navbar/footer) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Page-Specific Pricing CSS -->
+  <link rel="stylesheet" href="pricing.css" />
+
+  <link 
+  rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top custom-navbar">
+  <div class="container">
+    <!-- Logo / Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <!-- Ledger Logo (40px x 40px) -->
+      <img 
+        src="assets/Ledger-Logo.png" 
+        alt="Ledger Logo" 
+        width="40" 
+        height="40" 
+        class="rounded-circle me-2"
+      >
+      <!-- Brand Text -->
+      <span class="fw-bold" style="color: #006400;">Ledger</span>
+    </a>
+
+    <!-- Toggle button for mobile view -->
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavDropdown" 
+      aria-controls="navbarNavDropdown" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <!-- Home Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- WHAT WE DO (DROPDOWN) -->
+        <li class="nav-item dropdown">
+          <a 
+            class="nav-link dropdown-toggle" 
+            href="#" 
+            id="whatWeDoDropdownMenuLink" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="whatWeDoDropdownMenuLink">
+            <li><a class="dropdown-item" href="pos.html">POS</a></li>
+            <li><a class="dropdown-item" href="#">AI Dashboard</a></li>
+          </ul>
+        </li>
+
+        <!-- Pricing Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+
+        <!-- About Us Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+
+        <!-- REGISTER YOUR INTEREST BUTTON -->
+        <li class="nav-item">
+          <a 
+            class="btn btn-outline-success ms-lg-3" 
+            href="register.html"
+            style="border-radius: 20px;"
+          >
+            Register Your Interest
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- PRICING SECTION -->
+  <section class="pricing-section py-5">
+    <div class="container text-center">
+      <h2 class="pricing-heading mb-4">
+        Choose your plan and get <br>started with Ledger
+      </h2>
+
+      <!-- 
+        align-items-stretch ensures each column is the same height, 
+        so buttons align horizontally 
+      -->
+      <div class="row justify-content-center g-4 align-items-stretch">
+        
+        <!-- BASIC PLAN -->
+        <div class="col-md-3">
+          <!-- 
+            .d-flex.flex-column + .justify-content-between 
+            keep the button at the bottom 
+          -->
+          <div class="plan-box basic-plan d-flex flex-column justify-content-between p-4 h-100">
+            
+            <!-- TOP CONTENT -->
+            <div>
+              <h3 class="plan-title-1 mb-2">Basic</h3>
+              <p class="plan-price mb-2"><font color="#000">
+                Free Forever <br></font>
+                <small>No Credit Card Required</small>
+              </p>
+              <!-- Horizontal line after price -->
+              <hr class="plan-divider">
+
+              <ul class="custom-check-list">
+                <li>Multiple Channel Integration</li>
+                <li>Manage up to 250 products</li>
+                <li>Basic promotion and discounts management</li>
+                <li>Basic Inventory Management</li>
+                <li>Reports and transaction data up to 1 year</li>
+                <li>Transactions up to $6000/month</li>
+              </ul>
+              
+            </div>
+
+            <!-- BUTTON AT THE BOTTOM -->
+            <button class="btn btn-success w-100 mt-3">Get Started</button>
+          </div>
+        </div>
+
+        <!-- STARTER PLAN -->
+        <div class="col-md-3">
+          <div class="plan-box starter-plan d-flex flex-column justify-content-between p-4 h-100">
+            
+            
+            <!-- TOP CONTENT -->
+            <div>
+              <h3 class="plan-title-1 mb-2">Starter</h3>
+              <p class="plan-price mb-2"><font color="#000">
+                From $54.45 / month <br></font>
+                <small>after offer period</small>
+              </p>
+              <hr class="plan-divider">
+
+              <ul class="custom-check-list">
+                <li>Multiple Channel Integration</li>
+                <li>Manage up to 800 products</li>
+                <li>Advanced promotion and discounts management</li>
+                <li>Basic Inventory Management</li>
+                <li>Unlimited Reports and transaction data</li>
+                <li>Unlimited Transactions</li>
+                <li>Basic AI Features</li>
+              </ul>
+            </div>
+
+            <!-- BUTTON AT THE BOTTOM -->
+            <button class="btn btn-success w-100 mt-3">Get Started</button>
+          </div>
+        </div>
+
+        <!-- GROWTH PLAN -->
+        <div class="col-md-3">
+          <div class="plan-box growth-plan d-flex flex-column justify-content-between p-4 h-100 position-relative">
+            
+            <!-- "1 month free" label (optional) -->
+            
+            
+            <!-- TOP CONTENT -->
+            <div>
+              <div class="free-label text-white mb-2">
+                1 month free
+              </div>
+              <h3 class="plan-title mb-2"><font color="#065628"> Growth</font></h3>
+              <p class="plan-price mb-2"><font color="#000">From $81.75 / month <br></font>
+                
+                <small>after offer period</small>
+              </p>
+              <hr class="plan-divider">
+
+              <ul class="custom-check-list">
+                <li> Multiple Channel Integration</li>
+                <li> Manage unlimited products</li>
+                <li> Advanced promotion and discounts management</li>
+                <li> AI Inventory Management</li>
+                <li> Unlimited Reports and transaction data</li>
+                <li> Unlimited Transactions</li>
+                <li> Advanced AI Features</li>
+                <li> Employee Management</li>
+                <li> Customer Management</li>
+                <li> Multi-Device Usage</li>
+                <li> Priority Customer Support</li>
+              </ul>
+            </div>
+
+            <!-- BUTTON AT THE BOTTOM -->
+            <button class="btn btn-success w-100 mt-3">Get Started</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+  <div class="container py-5">
+    
+    <div class="row">
+      <!-- LEFT COLUMN: Brand & Decorative Shapes -->
+      <div class="col-md-3 d-flex flex-column align-items-start brand-col mb-4 mb-md-0">
+        
+        <div class="footer-brand d-flex align-items-center mb-3">
+          <!-- Ledger Logo (replace with your actual image) -->
+          <img src="assets/pc.1.png" alt="Hex1" class="me-1" style="width: 200px; margin-left: -150px;">
+          <img 
+            src="assets/Ledger-Logo.png" 
+            alt="Ledger Logo" 
+            width="90" 
+            height="90"
+            class="me-2"
+            style="margin-left: 30px;"
+          >
+          <br>
+          <h4 class="mb-0">Ledger</h4>
+        </div>
+        
+        <!-- Decorative Hex Shapes (optional, replace with your own images) -->
+        
+      </div>
+
+      <!-- MIDDLE COLUMN 1: Important Links -->
+      <div  class="col me-4" style="margin-left: 70px; margin-top: 40px; margin-right: 50px;">
+        <h5 class="footer-heading">Important Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">POS Software</a></li>
+          <li><a href="#">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- MIDDLE COLUMN 2: About Us -->
+      <div  class="col me-4" style=" margin-top: 40px;">
+        <h5 class="footer-heading">About Us</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN: Contact Us -->
+      <div  class="col me-4" style=" margin-top: 40px;">
+        <h5 class="footer-heading">Contact Us</h5>
+        <div class="footer-contact d-flex align-items-center">
+          
+          <span class="text-white">ledger.ai.inc@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>

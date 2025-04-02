@@ -1,0 +1,779 @@
+/* Apply Helvetica to entire site (if not already done) */
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+  padding-top: 70px;
+}
+
+
+/******************************************************
+ * Navbar Link Colors & Hover
+ ******************************************************/
+ .custom-navbar .nav-link {
+  color: #065628;                /* Green text */
+  font-weight: 500;              /* Slightly bolder than default */
+  transition: color 0.2s ease;   /* Smooth color transition on hover */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #004d00; /* Darker green on hover */
+  text-decoration: none; /* Remove underline if any */
+}
+
+/******************************************************
+ * Dropdown Menu Styling
+ ******************************************************/
+/* Show dropdown when hovering over the dropdown item */
+.custom-navbar .nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+  animation: fadeInDown 0.3s ease forwards;
+}
+
+/* Optional: remove the click arrow rotation if needed */
+.custom-navbar .dropdown-toggle::after {
+  transition: transform 0.3s ease;
+}
+.custom-navbar .nav-item.dropdown:hover > .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+/*************************************************
+ * Dropdown Menu Styling
+ *************************************************/
+.custom-navbar .dropdown-menu {
+  border-radius: 8px;
+  border: 1px solid #eeeaea;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease 0.5s, transform 0.3s ease 0.5s;
+}
+
+.custom-navbar .nav-item.dropdown:hover > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/*************************************************
+ * Dropdown Item Hover Effect
+ *************************************************/
+.custom-navbar .dropdown-item {
+  color: #006400;
+  transition: background-color 0.2s ease;
+}
+.custom-navbar .dropdown-item:hover {
+  background-color: hwb(0 98% 0%);
+  color: #004d00;
+}
+
+/*************************************************
+ * Keyframes for Dropdown Fade In
+ *************************************************/
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/******************************************************
+ * Mobile Toggler Icon (Optional)
+ ******************************************************/
+.navbar-light .navbar-toggler-icon {
+  filter: hue-rotate(90deg); 
+  /* Example: slightly adjust the color of the toggler icon */
+}
+
+
+/* Section that holds the title, button, and boxes */
+.hero-cards-section {
+  background-color: #fff;
+}
+
+/* Make the Ledger title bigger and bolder */
+.ledger-title {
+  font-size: 7rem;  /* Adjust as needed */
+  font-weight: 700;
+  color: #065628;
+}
+
+/* Make the subtitle bigger */
+.ledger-subtitle {
+  font-size: 1.5rem; /* Adjust as needed */
+  font-weight: 800;
+}
+
+/* Card box shared styles */
+.card-box {
+  background-color: rgba(88, 129, 87, 0.7);/* Light green background */
+  border-radius: 20px;       
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  width: 100%;
+  color:#fff;
+  font-size: 2rem;
+  text-align: left;
+  margin-top: 2rem;
+  
+}
+
+
+.card-box h5{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Left & Right Boxes: same size */
+.same-size {
+  width: 400px; 
+  height: 300px;
+  position: relative;          /* So we can absolutely position the image */
+  overflow: visible;  
+}
+
+/* Middle Box: bigger and sits lower (margin-top inline in HTML) */
+.bigger-size {
+  width: 450px;
+  height: 320px;
+}
+
+.chart-section {
+  margin: 0;
+  padding:0 ;
+}
+
+.card-box .chart-display {
+  object-fit: cover;
+  width: 250px;
+  height: auto;
+
+  
+}
+
+.card-box .all-channels {
+  width: 248px;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+
+.card-box .ai-show {
+  position: absolute;
+  width: 300px;     /* Increase to “grow” it bigger than the card if you want */
+  height: auto;     /* Maintain aspect ratio */
+  left: 2px     /* Move it to the right of the box */
+   
+}
+
+.pos-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.btn-outline-success {
+  background-color: #fff;   /* Initial color */
+  border-color: #065628;       /* Match border to background */
+  color: #065628;                 /* White text */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  border-radius: 20px;
+  font-weight: 700;
+  border-width: 3px;
+}
+
+.btn-outline-success:hover {
+  background-color: #5b7c60;   /* Hover color */
+  border-color: #065628;
+  color: #fff;                 /* Keep text white or choose another */
+  border-radius: 20px;
+}
+
+/* Smaller button styling (already using .btn-sm from Bootstrap) */
+
+
+.btn-try-ledger {
+  background-color: #065628;   /* Initial color */
+  border-color: #065628;       /* Match border to background */
+  color: #fff;                 /* White text */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  border-radius: 20px;
+}
+
+.btn-try-ledger:hover {
+  background-color: #5b7c60;   /* Hover color */
+  border-color: #065628;
+  color: #fff;                 /* Keep text white or choose another */
+  border-radius: 20px;
+}
+
+
+
+/* Title: Bigger, Bolder, and Custom Color */
+.app-title {
+  font-size: 4rem;       /* Adjust as needed */
+  font-weight: 700;      /* Very bold */
+  color: #000;        /* Alternate color (change as desired) */
+}
+
+/* Box that holds the text lines */
+.app-text-box {
+  background-color: #ffffff;  /* White box; change if desired */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text lines: bigger & bolder, with your color */
+.app-text {
+  font-size: 2rem; /* Increase/decrease as desired */
+  font-weight: 700;  /* Bolder text */
+  color: #065628;    /* Alternate color */
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+.app-text1 {
+  font-size: 2rem; /* Increase/decrease as desired */
+  font-weight: 700;  /* Bolder text */
+  color: #000;    /* Alternate color */
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+
+/* Small label at the top-left */
+.card-label {
+  display: inline-block;
+  background-color: #9ab0a1;        /* Slightly lighter green or grayish */
+  color: #065628;                   /* Dark green text */
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 0.3rem 0.3rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.card-box h2{
+  color: #065628;
+  font-weight: 600;
+}
+
+/* Large amount text */
+.card-amount {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #065628;                   /* Dark green */
+  margin-bottom: 0.5rem;
+}
+
+/* Growth indicator (▲ 8%) */
+.card-growth {
+  font-size: 1rem;
+  color: #065628;                   /* Same or slightly different green */
+  margin-left: 0.5rem;
+}
+
+/* Chart image at the bottom-right */
+.card-chart {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 60px;       /* Adjust size as needed */
+  height: auto;
+}
+
+
+
+/* Initial state: lines are hidden and shifted left */
+.animate-line {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.6s ease; /* Adjust speed as desired */
+}
+
+/* Active state: lines become visible and slide in */
+.animate-line.animate-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/*************************************************************
+ * Section Wrappers
+ *************************************************************/
+ .apps-compare-section {
+  min-height: 100vh; /* Makes the section fill the full screen height */
+}
+
+.apps-compare-container {
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content */
+  width: 60%;
+}
+
+/* The row that holds both columns */
+.apps-compare-row {
+  flex-grow: 1; /* So it expands within the container */
+}
+
+/* Start hidden and slightly down or left */
+.fade-elements {
+  opacity: 0;
+  transform: translateY(20px); /* or translateX(20px) if you want a side slide */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+
+/* The right column gets a delay, so it appears later */
+.right-col {
+  transition-delay: 0.5s; /* half a second delay */
+}
+
+/* When in view, reveal the element */
+.fade-elements.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*************************************************************
+ * Left & Right Columns
+ *************************************************************/
+.apps-compare-left {
+  background-color: rgba(88, 129, 87, 0.75); /* Dark-ish green background */
+  border-radius: 20px 0 0 20px; 
+}
+
+.apps-compare-right {
+  background-color: #ffffff; /* White background (or remove if you want none) */
+}
+
+/*************************************************************
+ * Title & Subtitles
+ *************************************************************/
+.apps-compare-title {
+  /* Adjust the title’s appearance */
+  font-size: 3.5rem;  /* or 3rem, etc. */
+  font-weight: 800;
+  color: #000;        /* change to your preferred color */
+}
+
+.apps-compare-subtitle {
+  /* Common styling for the h4 in both columns */
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: left;
+  color: #065628;
+  font-size: 2rem;
+}
+
+/*************************************************************
+ * Text Lines
+ *************************************************************/
+.apps-compare-annual,
+.apps-compare-cost {
+  /* Style the cost lines */
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*************************************************************
+ * Logos / Images
+ *************************************************************/
+.logo-img {
+  width: 70%;  /* Adjust as needed */
+  height: 70%; /*if you want to keep aspect ratio */
+}
+
+.logo-img-big {
+  width: 80%;
+  height: 80%;  /* Adjust as needed for bigger logo */
+  margin-top: 1rem;
+}
+
+
+
+
+.btn-success {
+  background-color: #5b7c60;   /* Initial color */
+  border-color: #065628;       /* Match border to background */
+  color: #fff;                 /* White text */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  border-radius: 20px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.btn-success:hover {
+  background-color: #5b7c60;   /* Hover color */
+  border-color: #065628;
+  color: #fff;                 /* Keep text white or choose another */
+  border-radius: 20px;
+}
+
+
+/************************************************
+ * Smart Tools Section
+ ************************************************/
+/************************************************
+ * SECTION #1 (Original)
+ ************************************************/
+/* Common fade/slide properties for both boxes */
+.fade-element {
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Left box starts off-screen to the left */
+.box-left {
+  transform: translateX(-50px);
+}
+
+/* Right box starts off-screen to the right */
+.box-right {
+  transform: translateX(50px);
+}
+
+/* When in-view, become fully visible and aligned */
+.fade-element.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+ .smart-tools-section {
+  background-color: #fff;
+}
+
+.smart-tools-title {
+  font-size: 3rem; 
+  font-weight: 700;  
+  color: #000;
+  margin-bottom: 3.5rem;
+}
+
+.smart-tools-box-left {
+  background-color: #5b7c60;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  margin-left: 150px;
+  
+}
+
+.smart-tools-box-right {
+  background-color: #5b7c60;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  margin-top: 60px;
+  margin-right: 150px;
+  height: 600px; /* Adjust as needed */
+}
+
+.smart-tools-box-left h3,
+.smart-tools-box-right h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.smart-tools-box-left p, 
+.smart-tools-box-right p {
+  font-size: 1rem;
+  color: #eae4d2;
+  font-weight: 700;
+}
+
+/* Negative margins / absolute positioning for images */
+.outside-left-img {
+  margin-left: -250px;
+  border-radius: 20px;
+  margin-top: 4rem;
+  transform: scale(1.5);
+  transform-origin: top left; 
+}
+
+.outside-right-img {
+  position: absolute;
+  right: -40px;
+  
+  transform: translateY(-50%);
+  border-radius: 20px;
+  
+  transform: scale(1.4);
+  transform-origin: top left; 
+}
+
+/************************************************
+ * SECTION #2 (New)
+ ************************************************/
+.smart-tools-section-two {
+  background-color: #fff;
+}
+
+.smart-tools-title-two {
+  font-size: 3rem; 
+  font-weight: 700;  
+  color: #000; /* Or your preferred color */
+}
+
+.smart-tools-box-left-two {
+  background-color: #5b7c60;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  margin-left: 150px;
+  height: 600px;
+  
+}
+
+.smart-tools-box-right-two {
+  background-color: #5b7c60;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  margin-top: 60px;
+  margin-right: 150px;
+  height: 800px; /* Adjust as needed */
+ /* Adjust as needed */
+}
+
+.smart-tools-box-left-two h3,
+.smart-tools-box-right-two h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.smart-tools-box-left-two p, 
+.smart-tools-box-right-two p {
+  font-size: 1rem;
+  color: #eae4d2;
+  font-weight: 700;
+}
+
+/* Negative margins / absolute positioning for images in section #2 */
+.outside-left-img-two {
+  margin-left: -60px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transform: scale(1);
+  transform-origin: top left; 
+}
+
+.outside-right-img-two {
+  
+  position: absolute;
+  right: -40px;
+  
+  transform: translateY(-50%);
+  border-radius: 20px;
+  
+  transform: scale(1.2);
+  transform-origin: top left; 
+}
+
+/************************************************
+ * SECTION #3 (New)
+ ************************************************/
+.smart-tools-section-three {
+  background-color: #fff;
+}
+
+.smart-tools-title-three {
+  font-size: 3rem; 
+  font-weight: 700;  
+  color: #000; /* Or your preferred color */
+}
+
+.smart-tools-box-left-three {
+  background-color: #5b7c60;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  margin-left: 150px;
+  height: 700px;
+}
+
+.smart-tools-box-right-three {
+  background-color: #5b7c60;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  margin-top: 60px;
+  margin-right: 150px;
+  height: 450px; /* Adjust as needed */
+ /* Adjust as needed */}
+
+.smart-tools-box-left-three h3,
+.smart-tools-box-right-three h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.smart-tools-box-left-three p, 
+.smart-tools-box-right-three p {
+  font-size: 1rem;
+  color: #eae4d2;
+  font-weight: 700;
+}
+
+/* Negative margins / absolute positioning for images in section #3 */
+.outside-left-img-three {
+  margin-left: -100px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transform: scale(1.2);
+  transform-origin: top left;
+}
+
+.outside-right-img-three {
+  
+  position: absolute;
+  right: -40px;
+  
+  transform: translateY(-50%);
+  border-radius: 20px;
+  
+  transform: scale(1.2);
+  transform-origin: top left; 
+}
+
+
+
+/**************************************
+ * FAQ Section
+ **************************************/
+ .faq-section {
+  background-color: #fff; /* or match your site background */
+}
+
+/* Section Title */
+.faq-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #000; /* brand color */
+  margin-bottom: 2rem;
+}
+
+/* FAQ Item Container */
+.faq-item {
+  /* Just for spacing */
+  margin-bottom: 1rem;
+}
+
+/* The question "button" with elliptical shape */
+.faq-question {
+  background-color: #5b7c60; /* greenish background */
+  border-radius: 30px;       /* elliptical corners */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+
+  /* Make the question + icon appear side-by-side */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* The plus icon on the right */
+.plus-icon {
+  font-weight: 700;
+  margin-left: 1rem;
+  transition: transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+/* The hidden answer by default */
+.faq-answer {
+  display: none;
+  /* White background with green border, elliptical corners */
+  border: 2px solid #5b7c60;
+  border-radius: 30px;
+  margin-top: 0.5rem;
+  padding: 1rem 1.5rem;
+  color: #065628;
+  background-color: #fff;
+}
+
+/* When .show is toggled, display the answer block */
+.faq-answer.show {
+  display: block;
+}
+
+
+
+
+
+/************************************************
+ * FOOTER SECTION
+ ************************************************/
+ .footer-section {
+  background-color: #8b9f8a; /* A muted green background, adjust as desired */
+  color: #ffffff;   
+  margin-top: 5rem;        /* White text by default */
+  /* If you want the footer always pinned at the bottom,
+     ensure your page content is tall enough or use a sticky footer approach. */
+}
+
+.footer-section .footer-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff; /* White text for headings */
+}
+
+/* Brand Column */
+.brand-col h4 {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Hex shapes container (optional) */
+.hex-shapes {
+  display: flex;
+  margin-top: 1rem;
+}
+
+/* Footer Links */
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-links li a:hover {
+  color: #d3d3d3; /* Lighter shade on hover */
+}
+
+/* Contact Info */
+.footer-contact {
+  margin-top: 1rem;
+}
+.footer-contact svg {
+  fill: #fff; /* Envelope icon color */
+}
+
+.row.g-1 {
+  --bs-gutter-x: 0 !important; /* Removes horizontal gap */
+  --bs-gutter-y: 0 !important; /* Removes vertical gap */
+}
