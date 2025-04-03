@@ -118,31 +118,32 @@
           <h2> <strong> Send your message!</strong></h2> 
           <br> 
           <!-- register.html (or your page) -->
-        <form action="process-form.php" method="POST">
+        <form action="/api/submit" method="POST">
             <div class="row mb-3">
-            <div class="col-md-6 mb-3 mb-md-0">
+              <div class="col-6">
                 <label for="name" class="form-label">Enter your name</label>
-                <input 
-                type="text" 
-                class="form-control" 
-                id="name" 
-                name="name"       
-                placeholder="Your Name" 
-                required
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
                 >
-            </div>
-            <div class="col-md-6">
+              </div>
+              <div class="col-6">
                 <label for="phone" class="form-label">Phone</label>
-                <input 
-                type="tel" 
-                class="form-control" 
-                id="phone" 
-                name="phone"      
-                placeholder="Enter your phone number" 
-                required
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  required
                 >
+              </div>
             </div>
-            </div>
+          
         
             <div class="row mb-3">
             <div class="col-md-6 mb-3 mb-md-0">
@@ -278,18 +279,6 @@
 </footer>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var input = document.querySelector("#phone");
-      window.intlTelInput(input, {
-        // Options:
-        initialCountry: "auto",         // or set a specific country like "us"
-        // geoIpLookup requires a 3rd-party IP service to detect user country
-        // utilsScript is optional for advanced formatting
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-      });
-    });
-</script>
   
 <!-- Bootstrap JS (CDN) -->
 <script 

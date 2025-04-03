@@ -777,3 +777,72 @@ body {
   --bs-gutter-x: 0 !important; /* Removes horizontal gap */
   --bs-gutter-y: 0 !important; /* Removes vertical gap */
 }
+
+
+
+/******************************************************
+ * RESPONSIVE MEDIA QUERIES
+ ******************************************************/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+  /* Make fixed-width boxes fluid */
+  .same-size, .bigger-size {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+  /* Adjust smart tools boxes margins */
+  .smart-tools-box-left,
+  .smart-tools-box-right,
+  .smart-tools-box-left-two,
+  .smart-tools-box-right-two,
+  .smart-tools-box-left-three,
+  .smart-tools-box-right-three {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+  }
+  /* Reset outside images positioning */
+  .outside-left-img,
+  .outside-right-img,
+  .outside-left-img-two,
+  .outside-right-img-two,
+  .outside-left-img-three,
+  .outside-right-img-three {
+    position: relative;
+    transform: none;
+    margin: 0 auto;
+    display: block;
+  }
+  /* Adjust footer brand image margin */
+  .footer-brand img {
+    margin-left: 0;
+  }
+  /* Reduce the Ledger title size */
+  .ledger-title {
+    font-size: 5rem;
+  }
+}
+
+/* Small devices (phones, less than 576px) */
+@media (max-width: 576px) {
+  .ledger-title {
+    font-size: 4rem;
+  }
+  .ledger-subtitle {
+    font-size: 1.2rem;
+  }
+  .apps-compare-container {
+    width: 90%;
+  }
+  .app-text, .app-text1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+  .faq-title {
+    font-size: 2.5rem;
+  }
+}
+

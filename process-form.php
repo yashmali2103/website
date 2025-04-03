@@ -1,8 +1,8 @@
 <?php
 // Replace these variables with your actual database connection info from GoDaddy:
-$servername = "your_db_host";     // e.g., "localhost" or a specific host address provided by GoDaddy
-$username   = "your_db_username";  // Your database username
-$password   = "your_db_password";  // Your database password
+$servername = "localhost";     // e.g., "localhost" or a specific host address provided by GoDaddy
+$username   = "root";  // Your database username
+$password   = "";  // Your database password
 $dbname     = "ledger_db";         // The database name you created
 
 // Create a connection using MySQLi
