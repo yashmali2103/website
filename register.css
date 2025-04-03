@@ -1,0 +1,84 @@
+/* Basic page structure for the Register page */
+.register-section {
+    background-color: #fff; /* or match your brand colors */
+  }
+  
+
+
+  /* Form Column */
+  .form-col {
+    border-right: 1px solid #ccc; /* Vertical divider */
+  }
+  
+  /* Contact Column */
+  .contact-col {
+    padding-left: 2rem;
+  }
+  
+  /* Headings & Paragraphs */
+  .form-col h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .form-col p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Labels */
+  .form-label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .form-control, .form-select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Button */
+  .btn-success {
+    background-color: #5b7c60; /* If you want a custom green, override here */
+    border-color: #5b7c60;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  
+  /* Right Column heading & text */
+  .contact-col h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #065628; /* brand color or adjust */
+  }
+  .contact-col p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+
+  /* 1) Ensure the phone input is full width */
+#phone {
+    width: 100% !important;
+  }
+  
+  /* 2) Make the intl-tel-input dropdown narrower than the input */
+  .iti__country-list {
+    width: auto !important;     /* Let it auto-size or set a fixed width */
+    min-width: 200px !important; /* Example minimum width; adjust as needed */
+    max-width: 280px !important; /* Example maximum width; adjust as needed */
+  }
+
+  
+  .custom-width {
+    width: 100%; /* default on small screens */
+  }
+  
+  @media (min-width: 768px) {
+    .custom-width {
+      width: 500px; /* fixed width on tablets+ */
+    }
+  }
+  
+  
+  

@@ -1,0 +1,182 @@
+/* Hero Section Styles */
+  .pos-hero-section {
+    padding: 4rem 0; /* Additional spacing if desired */
+    background-color: #fff; /* Or any background color */
+  }
+  
+  .pos-heading {
+    font-size: 4rem;
+    color: #000;  /* Adjust text color */
+  }
+  
+  .pos-subtitle {
+    font-size: 1.25rem;
+    color: #555;  /* Slightly muted color */
+  }
+  
+  /* CTA Button in Hero */
+  .pos-cta {
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  /* Wrapper for POS image */
+  .pos-image-wrapper {
+    margin: 0 auto; /* center the container if needed */
+    max-width: 800px; /* limit the image width if you prefer */
+  }
+
+  .btn-try-ledger-2 {
+    background-color: #065628;   /* Initial color */
+    border-color: #065628;       /* Match border to background */
+    color: #fff;                 /* White text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 20px;
+    margin-bottom: 4rem;
+  }
+  
+  .btn-try-ledger-2:hover {
+    background-color: #5b7c60;   /* Hover color */
+    border-color: #065628;
+    color: #fff;                 /* Keep text white or choose another */
+    border-radius: 20px;
+  }
+  
+
+/* POS Solution Section */
+  .pos-solution-section {
+    background-color: #fff; 
+    /* 
+      If you want a different background or gradient, 
+      you can do so here.
+    */
+  }
+  
+  .pos-solution-title {
+    font-size: 3.5rem; 
+    font-weight: 700;
+    color: #000; /* Adjust to your brand color */
+    margin-bottom: 7rem;
+  }
+  
+  /* The solution cards */
+  .solution-card {
+    background-color: rgba(88, 129, 87, 0.7); /* Light green background (adjust if desired) */
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  .solution-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* existing background-color, border-radius, etc. */
+  }
+  
+  /* Hover state: scale up slightly & add a shadow */
+  .solution-card:hover {
+    transform: scale(1.05); /* 5% larger */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card headings */
+  .solution-card-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Increase gutter space between columns: now in HTML: row g-5 */
+
+/* Make descriptor text bold & custom color */
+
+
+  /* Card description */
+  .solution-card-desc {
+    font-size: 2rem;
+    color: #eae4d2;
+    font-weight: 700;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  /* The big stat */
+  .solution-card-stat-desc {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  
+  .solution-card-stat {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    text-align: left;
+  }
+
+  
+  /* If you want the icons a bit bigger */
+  .solution-card-title svg {
+    margin-left: 0.5rem;
+    width: 24px;
+    height: 24px;
+  }
+
+  .solution-card-desc p{
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+
+
+  /* Shared Section Wrapper */
+  .pos-feature-section {
+    background-color: #fff;
+  }
+  
+  /* Section Titles */
+  .feature-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000; /* Adjust brand color if needed */
+    margin-bottom: 1rem;
+  }
+  
+  /* Section Text */
+  .feature-text {
+    font-size: 1.5rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Images */
+  .pos-feature-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .fade-right {
+    opacity: 0;
+    transform: translateX(40px);   /* Start 40px to the right */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* Final state when in view */
+  .fade-right.in-view {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .fade-left {
+    opacity: 0;
+    transform: translateX(-40px); /* Start 40px to the left */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .fade-left.in-view {
+    opacity: 1;
+    transform: translateX(0);
+  }
+    
