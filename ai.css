@@ -1,17 +1,66 @@
 /* Hero Section Styles */
-  .pos-hero-section {
+.pos-hero-section {
     padding: 4rem 0; /* Additional spacing if desired */
     background-color: #fff; /* Or any background color */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
   }
   
   .pos-heading {
     font-size: 4rem;
     color: #000;  /* Adjust text color */
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+    animation: slideUpScale 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  
+  .pos-heading:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes slideUpScale {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(25px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+  }
+  
+  /* Add a subtle hover effect */
+  .pos-heading:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
   }
   
   .pos-subtitle {
     font-size: 1.25rem;
     color: #555;  /* Slightly muted color */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards 0.6s;
   }
   
   /* CTA Button in Hero */
@@ -30,16 +79,18 @@
     background-color: #065628;   /* Initial color */
     border-color: #065628;       /* Match border to background */
     color: #fff;                 /* White text */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease;
     border-radius: 20px;
     margin-bottom: 4rem;
+    transform: translateY(0);
   }
   
   .btn-try-ledger-2:hover {
     background-color: #5b7c60;   /* Hover color */
     border-color: #065628;
     color: #fff;                 /* Keep text white or choose another */
-    border-radius: 20px;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
 
@@ -157,124 +208,61 @@
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-  }
-  .fade-right {
-    opacity: 0;
-    transform: translateX(40px);   /* Start 40px to the right */
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: transform 0.3s ease;
   }
   
-  /* Final state when in view */
+  .pos-feature-section img:hover {
+    transform: scale(1.02);
+  }
+
+  /* Enhanced fade animations */
+  .fade-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
   .fade-right.in-view {
     opacity: 1;
     transform: translateX(0);
   }
+  
   .fade-left {
     opacity: 0;
-    transform: translateX(-40px); /* Start 40px to the left */
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateX(-60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
   }
   
   .fade-left.in-view {
     opacity: 1;
     transform: translateX(0);
   }
-    
-/* New POS Feature Section Styles */
-.pos-new-feature-section {
-  background-color: #ffffff;
-}
 
-.new-feature-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #000;
-}
-
-.new-feature-card {
-  background-color: #a3b18a;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 2rem;
-}
-
-.new-feature-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.new-feature-card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000000;
-}
-
-.new-feature-card img {
-  width: 150px;
-  height: 150px;
-}
-    
-/* Typing Animation */
-.typing-text {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid #000;
-}
-
-.pos-heading:nth-of-type(1) .typing-text {
-  animation: typing 2s steps(40, end), blink-caret 0.75s step-end 2s, remove-cursor 0.1s forwards 2.75s;
-}
-
-.pos-heading:nth-of-type(2) .typing-text {
-  opacity: 0;
-  animation: 
-    typing 2s steps(40, end) 2s forwards,
-    blink-caret 0.75s step-end 4s,
-    remove-cursor 0.1s forwards 4.75s;
-}
-
-@keyframes typing {
-  from { 
-    width: 0;
-    opacity: 1;
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
   }
-  to { 
-    width: 100%;
-    opacity: 1;
-  }
-}
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #000 }
-}
-
-@keyframes remove-cursor {
-  to { border-right: none }
-}
-
-/* Disable typing animation on mobile and tablet */
-@media (max-width: 991px) {
   .typing-text {
-    animation: none !important;
-    border-right: none;
-    width: 100%;
-    opacity: 1;
-    white-space: normal;
-    word-wrap: break-word;
-  }
-  
-  .pos-heading:nth-of-type(1) .typing-text,
-  .pos-heading:nth-of-type(2) .typing-text {
-    animation: none !important;
-    opacity: 1;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid #065628;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret 0.75s step-end infinite;
   }
 
-  .pos-heading {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    padding: 0 1rem;
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
-}    
+
+  /* The cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #065628 }
+  }
+    
