@@ -192,7 +192,7 @@
 }
 
 .new-feature-card {
-  background-color: #a3b18a;
+  background-color: rgba(88, 129, 87, 0.7);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -220,19 +220,22 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #000;
 }
 
 .pos-heading:nth-of-type(1) .typing-text {
-  animation: typing 2s steps(40, end), blink-caret 0.75s step-end 2s, remove-cursor 0.1s forwards 2.75s;
+  opacity: 0;
+  animation: 
+    typing 2s steps(40, end) forwards,
+    blink-caret 0.75s step-end 2s,
+    remove-cursor 0.1s forwards 2.50s;
 }
 
 .pos-heading:nth-of-type(2) .typing-text {
   opacity: 0;
   animation: 
-    typing 2s steps(40, end) 2s forwards,
-    blink-caret 0.75s step-end 4s,
-    remove-cursor 0.1s forwards 4.75s;
+    typing 2s steps(40, end) 1s forwards,
+    blink-caret 0.75s step-end 1s,
+    remove-cursor 0.1s forwards 1.50s;
 }
 
 @keyframes typing {
@@ -248,7 +251,7 @@
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #000 }
+  
 }
 
 @keyframes remove-cursor {
@@ -277,4 +280,11 @@
     line-height: 1.2;
     padding: 0 1rem;
   }
+}    
+
+.solution-icon {
+  width: 45px;
+  height: 45px;
+  margin-left: 8px;
+  vertical-align: middle;
 }    

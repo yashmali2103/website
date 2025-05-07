@@ -26,7 +26,28 @@ body {
   border-radius: 8px;
   border: 1px solid #eeeaea;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
+  width: fit-content;
+  min-width: 100%;
+  transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
+  transform-origin: top;
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.custom-navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.custom-navbar .dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
 }
 
 .custom-navbar .dropdown-item {
@@ -38,6 +59,7 @@ body {
 .custom-navbar .dropdown-item:hover {
   background-color: hwb(0 98% 0%);
   color: #004d00;
+  transition-delay: 0.1s;
 }
 
 .custom-navbar .dropdown-toggle::after {
