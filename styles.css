@@ -183,7 +183,7 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  
+  margin-left: 3.5rem; /* Increased from 2rem to 3.5rem to create more gap */
 }
 
 .btn-outline-success {
@@ -246,7 +246,8 @@ body {
   font-weight: 700;  /* Bolder text */
   color: #065628;    /* Alternate color */
   margin-bottom: 1rem;
-  margin-left: 5rem;
+  margin-left: 5.5rem; /* Keep existing margin */
+  text-align: left; /* Explicitly set left alignment */
 }
 
 .app-text1 {
@@ -254,7 +255,8 @@ body {
   font-weight: 700;  /* Bolder text */
   color: #000;    /* Alternate color */
   margin-bottom: 1rem;
-  margin-left: 5rem;
+  margin-left: 5.5rem; /* Keep existing margin */
+  text-align: left; /* Explicitly set left alignment */
 }
 
 
@@ -381,7 +383,7 @@ body {
 .apps-compare-subtitle {
   /* Common styling for the h4 in both columns */
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  
   text-align: left;
   color: #065628;
   font-size: 2rem;
@@ -394,7 +396,7 @@ body {
 .apps-compare-cost {
   /* Style the cost lines */
   font-size: 1.5rem;
-  margin-top: 1rem;
+  
   text-align: center;
 }
 
@@ -407,9 +409,10 @@ body {
 }
 
 .logo-img-big {
-  width: 80%;
-  height: 80%;  /* Adjust as needed for bigger logo */
-  margin-top: 1rem;
+  width: 85%;
+  height: 85%;
+  margin-top: 0.75rem;
+  
 }
 
 
@@ -464,28 +467,26 @@ body {
 
  .smart-tools-section {
   background-color: #fff;
+  padding-top: 4rem;  /* Added top padding */
 }
 
 .smart-tools-title {
   font-size: 3rem; 
   font-weight: 700;  
   color: #000;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1rem;  /* Further reduced from 1.5rem to 1rem */
 }
 
 .smart-tools-box-left {
   background-color: #5b7c60;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: visible;
   margin-left: 150px;
-  
 }
 
 .smart-tools-box-right {
   background-color: #5b7c60;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: visible;
   margin-top: 60px;
   margin-right: 150px;
@@ -543,22 +544,18 @@ body {
 .smart-tools-box-left-two {
   background-color: #5b7c60;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: visible;
   margin-left: 150px;
   height: 600px;
-  
 }
 
 .smart-tools-box-right-two {
   background-color: #5b7c60;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: visible;
   margin-top: 60px;
   margin-right: 150px;
   height: 800px; /* Adjust as needed */
- /* Adjust as needed */
 }
 
 .smart-tools-box-left-two h3,
@@ -613,7 +610,6 @@ body {
 .smart-tools-box-left-three {
   background-color: #5b7c60;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: visible;
   margin-left: 150px;
   height: 700px;
@@ -622,12 +618,11 @@ body {
 .smart-tools-box-right-three {
   background-color: #5b7c60;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: visible;
   margin-top: 60px;
   margin-right: 150px;
   height: 450px; /* Adjust as needed */
- /* Adjust as needed */}
+}
 
 .smart-tools-box-left-three h3,
 .smart-tools-box-right-three h3 {
@@ -895,7 +890,6 @@ body {
   min-height: 400px; /* Default height - can be overridden individually */
   background-color: #5b7c60;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -1742,5 +1736,11 @@ img[src*="9.1.png"] {
     margin-bottom: 2rem;
     text-align: center;
   }
+}
+
+/* Update the scroll-lines container */
+.scroll-lines {
+  margin-left: 0.5rem; /* Keep existing margin */
+  margin-right: 3.5rem; /* Increased from 2rem to 3.5rem to create more space between columns */
 }
 
